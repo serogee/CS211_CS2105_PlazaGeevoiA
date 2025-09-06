@@ -8,16 +8,18 @@ public class SuperDigit {
         String number = String.valueOf(input.nextInt());
         String result = number;
 
-        while (result.length() > 1) {
-            int sum = 0;
-            for (int i = 0; i < result.length(); i++) {
-                sum += (result.charAt(i) - '0');
-            }
-            result = String.valueOf(sum);
-        } 
+        if (result.length() <= 18) {
 
-        System.out.println("Super Digit of " + number + ": " + result);
+            while (result.length() > 1) {
+                int sum = 0;
+                for (int i = 0; i < result.length(); i++) {
+                    sum += (result.charAt(i) - '0');
+                }
+                result = String.valueOf(sum);
+            } 
 
+            System.out.println("Super Digit of " + number + ": " + result);
+        }
         input.close();
     }
 }
