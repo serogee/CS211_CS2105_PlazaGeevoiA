@@ -16,12 +16,18 @@ Each folder or file corresponds to a specific programming exercise written in **
 
 ## 📂 Contents
 
--   **Practice Assessments**
+-   **01 - Practice Assessments**
     -   **Practice Assessment 1**
-        -   Super Digit
-        -   Fibonacci Sequence
-        -   FizzBuzz
-        -   Perfect Numbers
+        -   SuperDigit.java
+        -   FibonacciSequence.java
+        -   FizzBuzz.java
+        -   PerfectNumbers.java
+    -   **Practice Assessment 2**
+        -   PracticeAssessment2.pdf
+-   **02 - Laboratory Assessments**
+-   **03 - Playground**
+    -   2025-09-13
+        -   CalculateGCD.java
 
 _(More assessments will be added as the course progresses)_
 
