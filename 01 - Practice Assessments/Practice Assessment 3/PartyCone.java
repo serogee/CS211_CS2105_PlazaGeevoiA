@@ -25,8 +25,8 @@ public class PartyCone {
         double surfaceArea = getConeSurfaceArea(radius, height);
         double volume = getConeVolume(radius, height);
 
-        System.out.printf("Surface Area is %.4f%n", surfaceArea);
-        System.out.printf("Volume is %.4f%n", volume);
+        System.out.println(String.format("Surface Area is %.4f", surfaceArea));
+        System.out.println(String.format("Volume is %.4f", volume));
 
         input.close();
     }
