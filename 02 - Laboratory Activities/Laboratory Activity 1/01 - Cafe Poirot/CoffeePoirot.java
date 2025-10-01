@@ -42,6 +42,9 @@ public class CoffeePoirot {
             System.out.println(menuItemDescriptions[orders[i]-1]);
         };
 
+        System.out.println("\nThank you for visiting Coffee Poirot!");
+
+
         input.close();
 
     }
