@@ -55,8 +55,6 @@ Each folder or file corresponds to a specific programming exercise written in **
 📄 README.md
 ```
 
-_(More assessments will be added as the course progresses)_
-
 ---
 
 ## 📝 Student Information
@@ -69,7 +67,3 @@ _(More assessments will be added as the course progresses)_
 ---
 
 📌 _This repository will be updated regularly with new laboratory assessments._
-
-```
-
-```
