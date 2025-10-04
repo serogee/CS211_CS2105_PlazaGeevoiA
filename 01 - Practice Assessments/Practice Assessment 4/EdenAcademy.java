@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class EdenAcademy {
 
-    static int calculateGrade(int grade) {
-        if (grade % 5 >= 3 && grade >= 78) {
+    static int roundGrade(int grade) {
+        if (grade % 5 >= 3) {
             grade = grade + (5 - (grade % 5));
         } 
         return grade;
@@ -20,21 +20,43 @@ public class EdenAcademy {
         int n = input.nextInt();
 
         int[] grades = new int[n];
-        System.out.print("\nEnter grades:");
+        System.out.print("Enter grades:");
+        
+        int[] passed = new int[n];
+        int[] failed = new int[n];
+        int passCount = 0, failCount = 0;
+
         for (int i = 0; i < n; i++) {
             System.out.print(" ");
-            grades[i] = input.nextInt();
+            int grade = input.nextInt();
+            grades[i] = grade;
+
+            if (isPassingGrade(grade)) {
+                passed[passCount++] = roundGrade(grade);
+            } else {
+                failed[failCount++] = grade;
+            }
         }
 
-        int[] passed;
-        int stellaStar = 0;
-        int tonitrusBold = 0;
+        System.out.println();
 
-        System.out.print("\n\nPassed:");
+        System.out.print("Passed:");
+        if (passCount > 0) {
+            for (int i = 0; i < passCount; i++) {
+                System.out.print(String.format(" %d", passed[i]));
+            }
+        }
+        System.out.print("\nFailed:");
+        if (passCount > 0) {
+            for (int i = 0; i < failCount; i++) {
+                System.out.print(String.format(" %d", failed[i]));
+            }
+        }
+        System.out.println("\n");
         
+        System.out.println("Stella Stars: " + (passCount / 3));
+        System.out.println("Tonitrus Bolts: " + failCount);
 
-
-        
         input.close();
     }
 }
